@@ -5,7 +5,10 @@ var React = require('react');
 // Make this a stateless functional component and only return one thing - Using fat arrows
 var About = (props) => {
 		return (
-			<h3>About</h3>
+			<div>
+				<h3>About</h3>
+				<p>Welcome to the examples page!</p>
+			</div>
 		);
 };
 
