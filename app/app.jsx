@@ -7,9 +7,12 @@ var Weather = require ('Weather');
 var About = require ('About');
 var Examples = require ('Examples');
 
-// Load foundation
+// Load foundation styles
 require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
+
+// Our custom app css
+require('style!css!applicationStyles')
 
 // Now actually render our class to the DOM
 ReactDOM.render(
