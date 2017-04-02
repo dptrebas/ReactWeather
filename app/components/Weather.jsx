@@ -44,9 +44,14 @@ var Weather = React.createClass({
 	},
 
 	// See if we should do a search from a passed in parameter
-	// Call the componentWillReceiveProps with our props
 	componentDidMount: function () {
-		return this.componentWillReceiveProps( this.props );
+		var location = this.props.location.query.location;
+
+		// If a location was passed in - Set it and then go back to the root
+		if( location && location.length > 0 ){
+			this.handleSearch(location);
+			window.location.hash = '/#';
+		}
 	},
 
 	// See if the location changed
