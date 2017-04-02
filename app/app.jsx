@@ -8,11 +8,11 @@ var About = require ('About');
 var Examples = require ('Examples');
 
 // Load foundation styles
-require('style!css!foundation-sites/dist/foundation.min.css')
+require('style!css!foundation-sites/dist/css/foundation.min.css')
 $(document).foundation();
 
 // Our custom app css
-require('style!css!applicationStyles')
+require('style!css!sass!applicationStyles')
 
 // Now actually render our class to the DOM
 ReactDOM.render(
